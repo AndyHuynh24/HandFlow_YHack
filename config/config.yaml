@@ -1,0 +1,147 @@
+# HandFlow Configuration
+# =====================
+
+#Whole project mediapipe config
+mediapipe:
+  min_detection_confidence: 0.5
+  min_tracking_confidence: 0.3
+  max_num_hands: 2
+  model_complexity: 1  # 0=fastest, 1=balanced, 2=accurate
+
+# Data Configuration
+data:
+  right_raw_path: "data/raw/right_mp_data"
+  processed_path: "data/processed"
+  left_raw_path: "data/raw/left_mp_data"
+  keypoint_dim: 84  # 21 landmarks * 3 values (x, y, z)
+  sequence_length: 12  # Number of frames per sequence
+  target_fps: 20  # Target FPS for data collection and inference (must match!)
+
+  validator: 
+    check_sequence_length: true
+    check_nan: true
+    check_outliers: true
+    outlier_std_threshold: 5.0
+
+# Feature Engineering Configuration
+features: {}
+
+# Model Configuration
+model:
+  output_dir: "models"
+  logs_dir: "logs"
+  architecture: "tcn"  # Available: tcn, lstm, gru, cnn1d, transformer
+  gestures:
+    - none
+    - horizontal_swipe
+    - swipeup
+    - thumb_index_swipe
+    - thumb_middle_swipe
+    - 5_fingers_close
+    - pointyclick
+    - middleclick
+    - thumb_touch
+    - thumb_hold
+    - thumb_release
+    - capture_release
+    - capture_hold
+    - touch_hover
+    - touch_hold
+    - touch
+  input_dim: 96
+  hidden_units: 192
+  num_layers: 3
+  dropout: 0.15
+  num_classes: 16
+  model_path: "models/hand_action.tflite"
+
+# Training Configuration
+training:
+  batch_size: 4
+  epochs: 1000
+  learning_rate: 0.0001
+  
+  # Learning Rate Scheduler
+  reduce_lr:
+    enabled: true
+    factor: 0.5
+    patience: 8
+    min_lr: 0.0000001
+  early_stopping_patience: 25
+  validation_split: 0.15
+  optimizer: "adam"
+  loss: "categorical_crossentropy"
+  
+augmentation:  
+  enabled: true
+  n_variants: 6
+
+  max_frame_jitter: 0.015        # caps per-frame noise
+  motion_noise_scale: 0.5        # reduce noise when hand is static
+  min_timewarp_frames: 6         # disables time warp for very short seq
+  landmark_dropout_mode: "whole" # "whole" | "fingertips"
+  max_depth_delta: 0.08          # clamp z distortion
+
+  #Gaussian Noise
+  noise_prob: 0.4 
+  noise_std: 0.003
+
+  #Time warping (disabled by default - can distort gesture timing characteristics)
+  time_warp_enabled: false
+  time_warp_prob: 0.2
+  time_warp_factor: 0.1
+
+  #Dropout 
+  dropout_prob: 0.15
+  dropout_rat: 0.05
+
+  #Uniform scale
+  scale_prob: 0.2
+  scale_range: [0.9, 1.1]
+
+  #2D rotation: 
+  rotation_prob: 0.15
+  rotation_range: [-8,8]  # degrees
+
+  #Z-axis augmentation
+  z_scale_prob: 0.3
+  z_scale_range: [0.85, 1.15]
+
+  z_shift_prob: 0.3
+  z_shift_range: [-0.08, 0.08]
+
+  z_proportional_prob: 0.25
+  z_proportional_range: [0.85, 1.15]
+  
+  z_finger_length_prob: 0.25
+  z_finger_length_range: [0.9, 1.1]
+
+  z_noise_prob: 0.4
+  z_noise_std: 0.004
+
+  hand_tilt_prob: 0.2
+  hand_tilt_range: [-12, 12]  # degrees
+
+# Experiment Tracking Configuration
+tracking:
+  enabled: true                       # Master switch for all tracking
+
+  # Weights & Biases (wandb) - Cloud-based experiment tracking
+  wandb:
+    enabled: false                    # Set to true to enable W&B
+    project: "handflow-gestures"      # W&B project name
+    entity: "handflow"                   # W&B username/team (optional)
+    log_model: true                   # Upload model artifacts to W&B
+
+  # TensorBoard - Local experiment tracking
+  tensorboard:
+    enabled: true                    
+    log_dir: "logs/tensorboard"       # Directory for TensorBoard logs
+    histogram_freq: 1                 # Frequency to log weight histograms
+
+
+
+
+
+
+

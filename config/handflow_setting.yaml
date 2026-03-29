@@ -1,0 +1,841 @@
+gestures:
+  Left_horizontal_swipe:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_swipeup:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_swipedown:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_thumb_index_swipe:
+    actions:
+    - type: shortcut
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_thumb_middle_swipe:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_pointyclick:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_middleclick:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_5_fingers_close:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_thumb_touch:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_thumb_hold:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_thumb_release:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_capture_touch:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_capture_release:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_capture_hold:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_touch_hover:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_touch_hold:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_touch:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_horizontal_swipe:
+    actions:
+    - type: shortcut
+      value: cmd+t
+      label: ''
+      delay: 0.17
+    - type: text
+      value: youtube.com
+      label: ''
+      delay: 0.17
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_swipeup:
+    actions:
+    - type: file
+      value: /System/Library/CoreServices/Finder.app
+      label: ''
+      delay: 0.17
+  Right_thumb_index_swipe:
+    actions:
+    - type: shortcut
+      value: down
+      label: ''
+      delay: 0.17
+  Right_thumb_middle_swipe:
+    actions:
+    - type: shortcut
+      value: cmd+shift+p
+      label: ''
+      delay: 0.17
+    - type: text
+      value: run python file in terminal
+      label: ''
+      delay: 0.17
+    - type: shortcut
+      value: enter
+      label: ''
+      delay: 0.17
+  Right_pointyclick:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_middleclick:
+    actions:
+    - type: shortcut
+      value: s
+      label: ''
+      delay: 0.17
+    - type: text
+      value: Multiple view
+      label: ''
+      delay: 0.17
+    - type: shortcut
+      value: enter
+      label: ''
+      delay: 0.17
+  Right_5_fingers_close:
+    actions:
+    - type: shortcut
+      value: shift+z
+      label: ''
+      delay: 0.17
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_thumb_touch:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_thumb_hold:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_thumb_release:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_capture_touch:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_capture_release:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_capture_hold:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_touch_hover:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_touch_hold:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Right_touch:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+macropad_sets:
+- name: Editing
+  set_marker_id: 12
+  buttons:
+    0:
+      type: none
+      value: ''
+      label: Start Meeting
+      actions:
+      - type: text
+        value: Tap to execute
+        label: ''
+        delay: 0.17
+    1:
+      type: none
+      value: ''
+      label: Open Reminder
+      actions:
+      - type: shortcut
+        value: cmd+v
+        label: Paste
+        delay: 0.17
+    2:
+      type: none
+      value: ''
+      label: Insert Signature
+      actions:
+      - type: text
+        value: "Best regards,\n\nHuy Huynh  \nAI Engineer & Tech Enthusiast  \nEmail:\
+          \ andy.hb.huynh@gmail.com\nPhone: +1 (603) 338-1449"
+        label: ''
+        delay: 0.17
+    3:
+      type: none
+      value: ''
+      label: 'New desktop '
+      actions:
+      - type: shortcut
+        value: cmd+shift+z
+        label: Redo
+        delay: 0.17
+    4:
+      type: none
+      value: ''
+      label: Turn on music (Spotify)
+      actions:
+      - type: text
+        value: python main.py
+        label: Run
+        delay: 0.17
+    5:
+      type: none
+      value: ''
+      label: Open Notes
+      actions:
+      - type: shortcut
+        value: cmd+s
+        label: Save
+        delay: 0.17
+    6:
+      type: none
+      value: ''
+      label: Start work (OpenVSCode)
+      actions:
+      - type: file
+        value: /Applications/Visual Studio Code.app
+        label: ''
+        delay: 0.17
+    7:
+      type: none
+      value: ''
+      label: Ask ChatGPT
+      actions:
+      - type: shortcut
+        value: backspace
+        label: Delete
+        delay: 0.17
+    8:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    9:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    10:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    11:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+- name: Media
+  set_marker_id: 13
+  buttons:
+    0:
+      type: none
+      value: ''
+      label: Align
+      actions:
+      - type: shortcut
+        value: s
+        label: ''
+        delay: 0.17
+      - type: text
+        value: Align
+        label: ''
+        delay: 0.17
+      - type: shortcut
+        value: return
+        label: ''
+        delay: 0.17
+    1:
+      type: none
+      value: ''
+      label: look at
+      actions:
+      - type: shortcut
+        value: s
+        label: ''
+        delay: 0.2
+      - type: text
+        value: look at
+        label: ''
+        delay: 0.2
+      - type: shortcut
+        value: return
+        label: ''
+        delay: 0.2
+    2:
+      type: none
+      value: ''
+      label: 3 points Circle
+      actions:
+      - type: shortcut
+        value: cmd+left
+        label: Previous
+        delay: 0.17
+    3:
+      type: none
+      value: ''
+      label: Scale
+      actions:
+      - type: shortcut
+        value: cmd+right
+        label: Next
+        delay: 0.17
+    4:
+      type: none
+      value: ''
+      label: Visible edge view
+      actions:
+      - type: shortcut
+        value: ctrl+6
+        label: ''
+        delay: 0.17
+    5:
+      type: none
+      value: ''
+      label: Invisible view
+      actions:
+      - type: shortcut
+        value: ctrl+7
+        label: ''
+        delay: 0.17
+    6:
+      type: none
+      value: ''
+      label: Multiple view
+      actions:
+      - type: shortcut
+        value: s
+        label: ''
+        delay: 0.17
+      - type: text
+        value: Multiple view
+        label: ''
+        delay: 0.17
+      - type: shortcut
+        value: return
+        label: ''
+        delay: 0.17
+    7:
+      type: none
+      value: ''
+      label: Single view
+      actions:
+      - type: shortcut
+        value: s
+        label: ''
+        delay: 0.17
+      - type: text
+        value: single view
+        label: ''
+        delay: 0.17
+      - type: shortcut
+        value: return
+        label: ''
+        delay: 0.17
+    8:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    9:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    10:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    11:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+- name: Coding
+  set_marker_id: 14
+  buttons:
+    0:
+      type: none
+      value: ''
+      label: CV Video Loop
+      actions:
+      - type: text
+        value: "cap = cv2.VideoCapture(0)                                        \
+          \                                                                      \
+          \            \nwhile cap.isOpened():\n\tret, frame = cap.read()        \
+          \                                                                      \
+          \                                          \n\tif not ret:             \
+          \                                                     \n\t\tbreak\n\tcv2.imshow('Frame',\
+          \ frame)\n      \tif cv2.waitKey(1) & 0xFF == ord('q'):\n          \t\t\
+          break\ncap.release()\ncv2.destroyAllWindows()"
+        label: ''
+        delay: 0.17
+    1:
+      type: none
+      value: ''
+      label: Draw OpenCV Rect
+      actions:
+      - type: text
+        value: '<!-- Text & data -->
+
+          <input type="text" />
+
+          <input type="email" />
+
+          <input type="password" />
+
+          <input type="search" />
+
+          <input type="url" />
+
+          <input type="tel" />
+
+
+          <!-- Numbers & ranges -->
+
+          <input type="number" />
+
+          <input type="range" />
+
+
+          <!-- Date & time -->
+
+          <input type="date" />
+
+          <input type="time" />
+
+          <input type="datetime-local" />
+
+          <input type="month" />
+
+          <input type="week" />
+
+
+          <!-- Selection -->
+
+          <input type="checkbox" />
+
+          <input type="radio" />
+
+
+          <!-- Files & media -->
+
+          <input type="file" />
+
+          <input type="image" />
+
+
+          <!-- Buttons -->
+
+          <input type="button" />
+
+          <input type="submit" />
+
+          <input type="reset" />
+
+
+          <!-- UI / system -->
+
+          <input type="color" />
+
+          <input type="hidden" />
+
+          '
+        label: ''
+        delay: 0.17
+    2:
+      type: none
+      value: ''
+      label: Draw OpenCV Text
+      actions:
+      - type: shortcut
+        value: cmd+r
+        label: Run
+        delay: 0.17
+    3:
+      type: none
+      value: ''
+      label: Run Train
+      actions:
+      - type: shortcut
+        value: cmd+shift+d
+        label: Debug
+        delay: 0.17
+    4:
+      type: none
+      value: ''
+      label: Git Commit All
+      actions:
+      - type: text
+        value: 'git add . '
+        label: ''
+        delay: 0.2
+      - type: shortcut
+        value: return
+        label: ''
+        delay: 0.2
+      - type: text
+        value: git commit -m "update"
+        label: ''
+        delay: 0.17
+    5:
+      type: none
+      value: ''
+      label: Git push
+      actions:
+      - type: text
+        value: git push -u origin master
+        label: ''
+        delay: 0.2
+      - type: shortcut
+        value: return
+        label: ''
+        delay: 0.17
+    6:
+      type: none
+      value: ''
+      label: Start debug
+      actions:
+      - type: shortcut
+        value: F5
+        label: ''
+        delay: 0.17
+    7:
+      type: none
+      value: ''
+      label: Run dataset
+      actions:
+      - type: shortcut
+        value: cmd+shift+g
+        label: Git
+        delay: 0.17
+    8:
+      type: none
+      value: ''
+      label: Draw rect
+      actions:
+      - type: text
+        value: "cv2.rectangle(\n    img,\n    (x1, y1),  # top-left corner\n    (x2,\
+          \ y2),  # bottom-right corner\n    (0, 255, 0),  # color (B, G, R)\n   \
+          \ 2  # thickness (px)\n)"
+        label: ''
+        delay: 0.17
+    9:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    10:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+    11:
+      type: none
+      value: ''
+      label: ''
+      actions: []
+active_macropad_set: 2
+macropad_enabled: true
+camera:
+  index: 0
+  flip_horizontal: true
+  flip_vertical: true
+  swap_hands: true
+  source: webcam
+  esp32_serial_port: /dev/cu.usbmodem101
+  esp32_baud_rate: 2000000
+mouse:
+  smoothing: 0.27
+  base_sensitivity: 1.0
+  poll_interval: 0.002
+  inner_deadzone: 0.005
+  outer_deadzone: 0.014
+  activation_threshold: 0.06
+inference:
+  confidence_threshold: 0.7
+  stability_window: 6
+  cooldown_frames: 12
+  min_detection_confidence: 0.4
+  min_tracking_confidence: 0.2
+  model_complexity: 1
+theme: darkq
+window_geometry: 1000x700
+screen_overlay_macropad_enabled: true
+screen_overlay_macropad:
+  name: Screen Overlay
+  set_marker_id: 20
+  buttons:
+    0:
+      type: none
+      value: ''
+      label: Close all windows
+      actions:
+      - type: text
+        value: "cap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n\
+          \    if not ret:\n        break\n    cv2.imshow('frame', frame)\n    if\
+          \ cv2.waitKey(1) & 0xFF == ord('q'):\n        break\ncap.release()\ncv2.destroyAllWindows()"
+        label: ''
+        delay: 0.17
+    1:
+      type: none
+      value: ''
+      label: Shortcut
+      actions:
+      - type: text
+        value: "Uyen v\xE0 LInh l\xE0 con ch\xF3"
+        label: ''
+        delay: 0.17
+    2:
+      type: none
+      value: ''
+      label: Open Apps
+      actions:
+      - type: text
+        value: '#Draw text
+
+          cv2.putText(frame, ''text'', (150, 300), cv2.FONT_HERSHEY_SIMPLEX, 2, (255,
+          255, 255), 2)
+
+          #                         bottom-left                      scale  color
+          BGR    thickness'
+        label: ''
+        delay: 0.17
+    3:
+      type: none
+      value: ''
+      label: Play Musics (Spotify)
+      actions: []
+    4:
+      type: none
+      value: ''
+      label: Insert Email Template
+      actions:
+      - type: text
+        value: "Dear ,\n\nHandflow Team\nControl Everything\u2014With a Touch.\nTrigger\
+          \ complex workflows instantly using simple gestures.\n@UmassAmherst & Yale\
+          \ University"
+        label: ''
+        delay: 0.17
+    5:
+      type: none
+      value: ''
+      label: OpenCVTemplate
+      actions:
+      - type: text
+        value: "import cv2\n\ncap = cv2.VideoCapture(0)\nwhile cap.isOpened():\n \
+          \   ret, frame = cap.read()       \n    if not ret:\n        break     \
+          \                \n    cv2.imshow('Frame', frame)  \n    if cv2.waitKey(1)\
+          \ & 0xFF ==ord('q'):                         \n        break\ncap.release()\
+          \                     \ncv2.destroyAllWindows() "
+        label: ''
+        delay: 0.17
+    6:
+      type: none
+      value: ''
+      label: Start day (Email + Calendar)
+      actions:
+      - type: file
+        value: /System/Applications/Calendar.app
+        label: ''
+        delay: 0.17
+      - type: shortcut
+        value: ctrl+alt+right
+        label: ''
+        delay: 0.17
+      - type: file
+        value: /System/Applications/Mail.app
+        label: ''
+        delay: 0.17
+      - type: shortcut
+        value: ctrl+alt+left
+        label: ''
+        delay: 0.17
+    7:
+      type: none
+      value: ''
+      label: Open Nontes
+      actions: []
+    8:
+      type: none
+      value: ''
+      label: HTMl_input template
+      actions: []
+    9:
+      type: none
+      value: ''
+      label: CSS Create rounded panel
+      actions: []
+    10:
+      type: none
+      value: ''
+      label: OpenCV DrawRect template
+      actions:
+      - type: text
+        value: Tap to execute
+        label: ''
+        delay: 0.17
+    11:
+      type: none
+      value: ''
+      label: OpenCV DrawText Template
+      actions: []
+knuckle_macropad_enabled: true
+knuckle_macropad_buttons:
+  0:
+    type: none
+    value: ''
+    label: Open Workflow
+    actions:
+    - type: file
+      value: /System/Applications/Mail.app
+      label: ''
+      delay: 0.25
+    - type: shortcut
+      value: ctrl+option+left
+      label: ''
+      delay: 0.25
+    - type: file
+      value: /System/Applications/Calendar.app
+      label: ''
+      delay: 0.25
+    - type: shortcut
+      value: ctrl+option+right
+      label: ''
+      delay: 0.17
+  1:
+    type: none
+    value: ''
+    label: Open Canvas
+    actions:
+    - type: media_play
+      value: ''
+      label: ''
+      delay: 0.17
+  2:
+    type: none
+    value: ''
+    label: Open Gradescope
+    actions:
+    - type: media_prev
+      value: ''
+      label: ''
+      delay: 0.17
+  3:
+    type: none
+    value: ''
+    label: next song
+    actions: []
+  4:
+    type: none
+    value: ''
+    label: start/stop
+    actions: []
+  5:
+    type: none
+    value: ''
+    label: previous song
+    actions: []
+  6:
+    type: none
+    value: ''
+    label: Palm
+    actions: []

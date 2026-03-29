@@ -1,0 +1,132 @@
+# HandFlow User Settings Example
+# ================================
+# Copy this file to handflow_setting.yaml and customize for your setup
+# The actual handflow_setting.yaml is gitignored (user-specific)
+
+gestures:
+  # Left hand gestures (example - customize as needed)
+  Left_horizontal_swipe:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_swipeup:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_thumb_left:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_thumb_right:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_pointyclick:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+  Left_middleclick:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+
+  # Right hand gestures (example - customize as needed)
+  Right_horizontal_swipe:
+    actions:
+    - type: shortcut
+      value: cmd+tab
+      label: 'Switch App'
+      delay: 0.17
+  Right_swipeup:
+    actions:
+    - type: shortcut
+      value: cmd+space
+      label: 'Spotlight'
+      delay: 0.17
+  Right_thumb_left:
+    actions:
+    - type: scroll_up
+      value: ''
+      label: 'Scroll Up'
+      delay: 0.17
+  Right_thumb_right:
+    actions:
+    - type: scroll_down
+      value: ''
+      label: 'Scroll Down'
+      delay: 0.17
+  Right_pointyclick:
+    actions:
+    - type: shortcut
+      value: cmd+c
+      label: 'Copy'
+      delay: 0.17
+  Right_middleclick:
+    actions:
+    - type: shortcut
+      value: cmd+v
+      label: 'Paste'
+      delay: 0.17
+  Right_5_fingers_close:
+    actions:
+    - type: none
+      value: ''
+      label: ''
+      delay: 0.17
+
+# Camera settings
+camera:
+  index: 0
+  flip_horizontal: true
+  flip_vertical: false
+  swap_hands: false
+
+# Feature flags
+mouse_control_enabled: false
+aruco_screen_enabled: false
+macropad_enabled: true
+screen_overlay_macropad_enabled: false
+
+# MacroPad sets (paper-based)
+# Set IDs: 12, 13, 14 for paper macropads
+macropad_sets:
+  '12':
+    name: "MacroPad Set 1"
+    buttons:
+      0:
+        label: "Button 1"
+        actions:
+        - type: none
+          value: ''
+          delay: 0.17
+      1:
+        label: "Button 2"
+        actions:
+        - type: none
+          value: ''
+          delay: 0.17
+      # ... add more buttons as needed (0-11)
+
+# Screen Overlay MacroPad (Set ID: 20)
+screen_overlay_macropad:
+  name: "Screen Overlay"
+  buttons:
+    0:
+      label: "Button 1"
+      actions:
+      - type: none
+        value: ''
+        delay: 0.17
+    # ... add more buttons as needed (0-7)

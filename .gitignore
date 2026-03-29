@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Virtual Environments
+.env
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+htmlcov/
+.coverage
+.pytest_cache/
+coverage_html/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+logs/
+wandb/
+
+# Recordings & Captures
+recordings/
+captures/
+
+# Claude
+.claude/
+
+# Temp
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Secrets
+.env.local
+*.pem
+*.key
+
+# OS
+Thumbs.db
+
+# Don't push these
+test_crop.py
+public/
+RESUME_NOTES.md
+PITCH.md
+YHACK_STRATEGY.md
+HandFlow_Project_Summary.md
+benchmarks/
+docs/
+templates/
+tests/
+test/
+Experiment_notebooks/
+*.mp4
+*.m4v
+pyproject.toml
+requirements.txt
+train_akash.sh
+config/*copy*
+config/aruco_calibration*
+models/checkpoints/
+esp32.py
+wifi_esp32.py
+Experiment_notebooks/
