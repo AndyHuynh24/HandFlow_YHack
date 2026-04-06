@@ -763,12 +763,14 @@ class GestureDetector:
             self._click_at_touch(hand)
             return
 
-        # Pointyclick on right hand starts capture
-        if gesture == "pointyclick" and hand == "Right":
+        # Middleclick on right hand starts capture
+        if gesture == "middleclick" and hand == "Right":
             self.start_capture()
 
         # Signal non-touch gesture activation for visual feedback overlay
-        self._last_activated_gesture = (gesture, hand, time.time())
+        # Skip pointyclick — too sensitive for live demo
+        if gesture != "pointyclick":
+            self._last_activated_gesture = (gesture, hand, time.time())
 
         # Execute mapped action for other gestures
         mapping_key = f"{hand}_{gesture}"

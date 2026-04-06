@@ -10,13 +10,11 @@ RUN pip install --no-cache-dir \
     "pyyaml>=6.0" \
     "pydantic>=2.0.0"
 
-# Copy everything training needs
 COPY config/config.yaml config/config.yaml
 COPY scripts/train.py scripts/train.py
 COPY src/handflow/ src/handflow/
 COPY data/processed/ data/processed/
 
-# Create models dir for output
 RUN mkdir -p models
 
 ENV PYTHONPATH="/workspace/project/src"

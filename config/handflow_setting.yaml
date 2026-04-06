@@ -104,7 +104,7 @@ gestures:
   Right_horizontal_swipe:
     actions:
     - type: shortcut
-      value: cmd+t
+      value: right
       label: ''
       delay: 0.17
     - type: text

@@ -80,3 +80,4 @@ models/checkpoints/
 esp32.py
 wifi_esp32.py
 Experiment_notebooks/
+benchmarks/

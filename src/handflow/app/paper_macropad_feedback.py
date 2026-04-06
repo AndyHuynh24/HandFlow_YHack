@@ -66,6 +66,7 @@ class PaperMacroPadFeedback:
 
         try:
             self._root = tk.Tk()
+            self._root.withdraw()
             self._root.overrideredirect(True)
 
             # Start off-screen
@@ -77,9 +78,14 @@ class PaperMacroPadFeedback:
             self._root.config(bg='#2d2d2d')
             self._root.attributes('-topmost', True)
 
-            # macOS transparency
+            # macOS: prevent app from stealing focus
             if sys.platform == 'darwin':
                 self._root.attributes('-alpha', 0.95)
+                try:
+                    from AppKit import NSApp, NSApplicationActivationPolicyAccessory
+                    NSApp.setActivationPolicy_(NSApplicationActivationPolicyAccessory)
+                except ImportError:
+                    pass
 
             self._canvas = tk.Canvas(
                 self._root,
@@ -250,7 +256,6 @@ class PaperMacroPadFeedback:
             f"{self._x}+{self._y}"
         )
         self._root.attributes('-topmost', True)
-        self._root.lift()
         self._root.update_idletasks()
         self._visible = True
 
